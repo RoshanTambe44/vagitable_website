@@ -582,6 +582,14 @@ video {
   grid-column: span 8 / span 8;
 }
 
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.col-span-7 {
+  grid-column: span 7 / span 7;
+}
+
 .me-2 {
   margin-inline-end: 0.5rem;
 }
@@ -780,6 +788,10 @@ video {
   justify-content: space-around;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -816,16 +828,16 @@ video {
   scroll-behavior: smooth;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .border {
@@ -957,6 +969,11 @@ video {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -1122,19 +1139,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:-translate-y-4:hover {
-  --tw-translate-y: -1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:border:hover {
-  border-width: 1px;
 }
 
 .hover\:border-transparent:hover {
@@ -1211,13 +1219,30 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:w-\[500px\] {
+    width: 500px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .sm\:border-r {
+    border-right-width: 1px;
   }
 
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
@@ -1278,6 +1303,10 @@ video {
     gap: 1.25rem;
   }
 
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
   .md\:bg-gradient-to-r {
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }
@@ -1334,5 +1363,9 @@ video {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:border-r {
+    border-right-width: 1px;
   }
 }
