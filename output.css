@@ -698,6 +698,10 @@ video {
   height: 100%;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -724,6 +728,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[60px\] {
+  width: 60px;
 }
 
 .translate-y-10 {
@@ -814,6 +822,10 @@ video {
 
 .gap-\[4\.8rem\] {
   gap: 4.8rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -1215,12 +1227,24 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:h-\[80px\] {
+    height: 80px;
+  }
+
+  .sm\:w-\[80px\] {
+    width: 80px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .sm\:gap-20 {
+    gap: 5rem;
   }
 
   .sm\:border-r {
